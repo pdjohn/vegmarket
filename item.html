@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Items | Veg Market</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/item.css">
+
+    <!-- Font Awesome JS -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script> -->
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="navbar-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <a class="navbar-brand d-none d-lg-inline-block" href="index.html">
+                    <img src="images/logo/logo.png" alt="Logo">
+                </a>
+
+                <form class="w-70">
+                    <div class="input-group">
+                        <input type="text" class="form-control border border-right-0" placeholder="Search...">
+                        <span class="input-group-append">
+                        <button class="btn btn-light border border-left-0" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                      </span>
+                    </div>
+                </form>
+
+                <!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-align-justify"></i>
+                </button> -->
+
+                <li class="dropdown user user-menu list-unstyled">
+                <a href="#user" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">
+                  <img src="images/man.png" class="img-circle" alt="User Image">
+                  <span class="d-none d-lg-inline-block hidden-xs">Alexander</span>
+                </a>
+                <ul id="user" class="dropdown-menu text-center">
+                  <!-- User image -->
+                  <!-- <div class="card">
+                    <div class="card-header">
+                      <img class="card-img-top" src="images/man.png" alt="Card image cap">
+                    </div>
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Alexander Pierce</h5>
+                    </div>
+                    <div class="card-footer">
+                      
+                    </div>
+                  </div> -->
+
+                  <li><a href="#"><i class="fas fa-user-circle"></i>Profile</a></li>
+                  <li><a href="#"><i class="fas fa-power-off"></i>Log out</a></li>
+                </ul>
+              </li>
+            </div>
+        </nav>
+    </header>
+
+
+    
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar" class="sidebar-sticky">
+            <!-- <div class="sidebar-header">
+                <h3>Bootstrap Sidebar</h3>
+            </div> -->
+
+            <ul class="list-unstyled components">
+            <!-- <p>Dummy Heading</p> -->
+                <li>
+                    <a href="#fish" data-toggle="collapse" aria-expanded="false">Fish
+                      <i class="fas fa-angle-right rotate float-right"></i></a>
+                    <ul class="collapse list-unstyled" id="fish">
+                        <li>
+                            <a href="item.html">Frozen fish</a>
+                        </li>
+                        <li>
+                            <a href="item.html">Dry fish</a>
+                        </li>
+                        <li>
+                            <a href="item.html">Fresh fish</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#meat" data-toggle="collapse" aria-expanded="false">Meat
+                      <i class="fas fa-angle-right float-right rotate"></i></a>
+                    <ul class="collapse list-unstyled" id="meat">
+                        <li>
+                            <a href="item.html">Beef</a>
+                        </li>
+                        <li>
+                            <a href="item.html">Chicken & Duck</a>
+                        </li>
+                        <li>
+                            <a href="item.html">Mutton</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#breakfast" data-toggle="collapse" aria-expanded="false">Breakfast
+                      <i class="fas fa-angle-right float-right rotate"></i></a>
+                    <ul class="collapse list-unstyled" id="breakfast">
+                        <li>
+                            <a href="item.html">Breakfast 1</a>
+                        </li>
+                        <li>
+                            <a href="item.html">Breakfast 2</a>
+                        </li>
+                        <li>
+                            <a href="item.html">Breakfast 3</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#dairy" data-toggle="collapse" aria-expanded="false">Dairy
+                      <i class="fas fa-angle-right float-right rotate"></i></a>
+                    <ul class="collapse list-unstyled" id="dairy">
+                        <li>
+                            <a href="item.html">Dairy 1</a>
+                        </li>
+                        <li>
+                            <a href="item.html">Dairy 2</a>
+                        </li>
+                        <li>
+                            <a href="item.html">Dairy 3</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        
+        <!-- Page Content Holder -->
+        <div id="content">
+            <div class="overlay active"></div>
+            <div id="banner" class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="banner-img">
+                            <img src="images/banner/banner.jpg" alt="Banner img">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="container-fluid">
+                <div class="product">
+
+                    <div class="product-head text-center">
+                        <h1>Chicken & Duck</h1>
+                    </div>
+
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+
+                      <div class="card product-items">
+                        <img class="card-img-top" src="images/item/chicken.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Chicken 1</h5>
+                        </div>
+                        <ul class="list-group text-center">
+                          <li class="list-group-item product-quantity">700 gm</li>
+                          <li class="list-group-item product-price">&#2547 150</li>
+                          
+                        </ul>
+                        <div class="card-footer">
+                          <a href="#" class="btn btn-success w-100"><i class="fas fa-cart-plus"></i>Add to bag</a>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+
+                      <div class="card product-items">
+                        <img class="card-img-top" src="images/item/chicken.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Chicken 2</h5>
+                        </div>
+                        <ul class="list-group text-center">
+                          <li class="list-group-item product-quantity">700 gm</li>
+                          <li class="list-group-item product-price">&#2547 150</li>
+                          
+                        </ul>
+                        <div class="card-footer">
+                          <a href="#" class="btn btn-success w-100"><i class="fas fa-cart-plus"></i>Add to bag</a>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+
+                      <div class="card product-items">
+                        <img class="card-img-top" src="images/item/chicken.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Chicken 3</h5>
+                        </div>
+                        <ul class="list-group text-center">
+                          <li class="list-group-item product-quantity">700 gm</li>
+                          <li class="list-group-item product-price">&#2547 150</li>
+                          
+                        </ul>
+                        <div class="card-footer">
+                          <a href="#" class="btn btn-success w-100"><i class="fas fa-cart-plus"></i>Add to bag</a>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+
+                      <div class="card product-items">
+                        <img class="card-img-top" src="images/item/chicken.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Chicken 4</h5>
+                        </div>
+                        <ul class="list-group text-center">
+                          <li class="list-group-item product-quantity">700 gm</li>
+                          <li class="list-group-item product-price">&#2547 150</li>
+                          
+                        </ul>
+                        <div class="card-footer">
+                          <a href="#" class="btn btn-success w-100"><i class="fas fa-cart-plus"></i>Add to bag</a>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+
+                      <div class="card product-items">
+                        <img class="card-img-top" src="images/item/chicken.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Chicken 5</h5>
+                        </div>
+                        <ul class="list-group text-center">
+                          <li class="list-group-item product-quantity">700 gm</li>
+                          <li class="list-group-item product-price">&#2547 150</li>
+                          
+                        </ul>
+                        <div class="card-footer">
+                          <a href="#" class="btn btn-success w-100"><i class="fas fa-cart-plus"></i>Add to bag</a>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+
+                      <div class="card product-items">
+                        <img class="card-img-top" src="images/item/chicken.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Chicken 6</h5>
+                        </div>
+                        <ul class="list-group text-center">
+                          <li class="list-group-item product-quantity">700 gm</li>
+                          <li class="list-group-item product-price">&#2547 150</li>
+                          
+                        </ul>
+                        <div class="card-footer">
+                          <a href="#" class="btn btn-success w-100"><i class="fas fa-cart-plus"></i>Add to bag</a>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+
+                      <div class="card product-items">
+                        <img class="card-img-top" src="images/item/chicken.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Chicken 7</h5>
+                        </div>
+                        <ul class="list-group text-center">
+                          <li class="list-group-item product-quantity">700 gm</li>
+                          <li class="list-group-item product-price">&#2547 150</li>
+                          
+                        </ul>
+                        <div class="card-footer">
+                          <a href="#" class="btn btn-success w-100"><i class="fas fa-cart-plus"></i>Add to bag</a>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+
+                      <div class="card product-items">
+                        <img class="card-img-top" src="images/item/chicken.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Chicken 8</h5>
+                        </div>
+                        <ul class="list-group text-center">
+                          <li class="list-group-item product-quantity">700 gm</li>
+                          <li class="list-group-item product-price">&#2547 150</li>
+                          
+                        </ul>
+                        <div class="card-footer">
+                          <a href="#" class="btn btn-success w-100"><i class="fas fa-cart-plus"></i>Add to bag</a>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+            </div>
+
+            <!-- <footer id="footer">
+                <div class=" footer-content container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="footer-head">
+                                <p class=""><i class="fas fa-truck"></i>Delivery in 1 hour</p>
+                                <p class="float-right"><i class="far fa-money-bill-alt"></i>Cash On delivery</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-6 col-sm-6 col-12">
+                            <div class="footer-body-left">
+                                <div class="company-info">
+                                <img src="images/logo/logo.png" alt="Logo" class="img-responsive">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, libero amet accusantium doloribus? Est, ex? Cupiditate asperiores, rem enim minima repellat saepe consequuntur optio. Veniam rerum quod vero impedit? Distinctio!</p>
+                                </div>
+
+                                <div class="company-info-list">
+                                    <div class="tags">
+                                        <h4>Customer Servise</h4>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Contact us</a></li>
+                                            <li><a href="#">FAQs</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tags">
+                                        <h4>About Us</h4>
+                                        <ul class="list-unstyled">
+                                            
+                                            <li><a href="#">Meet The Team</a></li>
+                                            <li><a href="#">Terms of Use</a></li>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <div class="footer-body-right text-center">
+                                
+                                <img src="images/logo/playstore.png" alt="Google Play">
+                                <div class="support">
+                                    <h4><i class="fas fa-phone-volume"></i>01711-222333</h4>
+                                    <p>or email us <b>support@email.com</b></p>
+                                </div>
+                                <div class="icons">
+                                    <h5>Follow Us</h5>
+                                    <i class="fab fa-facebook-square"></i>
+                                    <i class="fab fa-youtube"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-linkedin"></i>
+                                    <i class="fab fa-twitter-square"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer> -->
+
+        </div>
+        
+        
+
+    </div>
+
+    
+
+    <!-- JS Links -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script> -->
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // $("#sidebar").mCustomScrollbar({
+            //     theme: "minimal"
+            // });
+
+            $('#sidebarCollapse').on('click', function () {
+
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+                $('.overlay').toggleClass('active');
+                //$('#banner').toggleClass('active');
+            });
+
+            $('#sidebar .components li ').on('click', function () {
+                $(this).toggleClass('active');
+            });
+
+            $(".rotate").on('click',function () {
+                $(this).toggleClass("down");
+            });
+        });
+    </script>
+</body>
+
+</html>
